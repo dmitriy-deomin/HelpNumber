@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dmitriy.deomin.helpnumber_free.Zapros"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perevod_vibor_user_loaut"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ваш оператор"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="Edit_vibor_operator" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Выберите получателя"
+            android:id="@+id/button_coll"
+            android:onClick="Сlik_send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perevod_loaut"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кому:"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="кому переводить"
+            android:id="@+id/textView_komu_perevodit"
+            android:gravity="center"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите сумму перевода:"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText_summa"
+            android:focusable="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Информация по переводам"
+            android:id="@+id/button"
+            android:textSize="10dp"
+            android:onClick="Uznat_summu_perevoda" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Перевести"
+            android:id="@+id/button_perevesty_ok"
+            android:onClick="Clik_perevod_bobla" />
+
+    </LinearLayout>
+
+</LinearLayout>

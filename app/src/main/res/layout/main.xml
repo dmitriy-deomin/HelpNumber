@@ -1,0 +1,131 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Operatori"
+                android:textSize="12sp"
+                android:id="@+id/button_operator"
+                android:layout_weight="1"
+                android:onClick="clik_operatori" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Vse_nomera_slugb"
+                android:textSize="12sp"
+                android:id="@+id/button_vse_nomera"
+                android:layout_weight="1"
+                android:onClick="clik_vse_slugbi" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Pozvonit_na_gorodskoy"
+                android:textSize="12sp"
+                android:id="@+id/button_call_gorod"
+                android:layout_weight="1"
+                android:onClick="clik_gorod" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_edinay_slugba"
+            android:id="@+id/button_spas"
+            android:onClick="clik"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_pozar"
+            android:id="@+id/button_pogar"
+            android:onClick="clik"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_polis"
+            android:id="@+id/button_polisia"
+            android:onClick="clik"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_skoray"
+            android:id="@+id/button_skoray"
+            android:onClick="clik"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_zag"
+            android:id="@+id/button_gaz"
+            android:onClick="clik"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Пополни мне счет"
+            android:textSize="12sp"
+            android:id="@+id/button_popolni"
+            android:onClick="Clik_n"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Перевести"
+            android:id="@+id/button_perevesti"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:onClick="Clik_n" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Взять в долг"
+            android:textSize="12sp"
+            android:id="@+id/button_dolg"
+            android:onClick="Clik_n"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</LinearLayout>

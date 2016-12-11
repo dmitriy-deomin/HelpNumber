@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="dmitriy.deomin.helpnumber_free.Abaut"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ver"
+        android:textSize="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/button_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="clik"
+            android:visibility="visible"
+            android:background="@drawable/envelop2"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/button3"
+            android:onClick="otziv"
+            android:background="@drawable/feedback"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/button2"
+            android:onClick="Ok"
+            android:background="@drawable/w256h2561372342392close256"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

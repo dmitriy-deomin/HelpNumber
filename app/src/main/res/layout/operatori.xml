@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dmitriy.deomin.helpnumber_free.Operatori"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Tele2"
+            android:id="@+id/button_tele2"
+            android:layout_weight="1"
+            android:onClick="clik" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Beeline"
+            android:id="@+id/button_beeline"
+            android:onClick="clik"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Mtc"
+            android:id="@+id/button_mtc"
+            android:onClick="clik"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Megafon"
+            android:id="@+id/button_megafon"
+            android:onClick="clik"
+            android:layout_weight="1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Smarts"
+        android:id="@+id/button_smarts"
+        android:onClick="clik"
+        android:layout_weight="1" />
+
+</LinearLayout>

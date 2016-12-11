@@ -1,0 +1,168 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dmitriy.deomin.helpnumber_free.Edit_number"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button"
+            android:id="@+id/textView_b"
+            android:layout_weight="1"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Number"
+            android:id="@+id/textView_n"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/textView_e_s_s"
+            android:textSize="20sp"
+            android:hint="@string/Edinay_s_s"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_e_s_s"
+            android:gravity="center"
+            android:hint="112"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/textView_p_ch"
+            android:textSize="20sp"
+            android:hint="@string/Pozar_chast"
+            android:layout_weight="1"
+            android:enabled="true" />
+
+        <EditText
+            android:layout_height="fill_parent"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_p_ch"
+            android:hint="101"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:enabled="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/textView_pol"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="@string/Pol"
+            android:enabled="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_pol"
+            android:hint="102"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/textView_skor"
+            android:textSize="20sp"
+            android:hint="@string/Scor"
+            android:layout_weight="1"
+            android:enabled="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_skor"
+            android:hint="103"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/textView_gaz"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="@string/Gazov"
+            android:enabled="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_gaz"
+            android:hint="104"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:enabled="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

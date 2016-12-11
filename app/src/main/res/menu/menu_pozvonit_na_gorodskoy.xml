@@ -1,0 +1,22 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dmitriy.deomin.helpnumber_free.Pozvonit_na_gorodskoy">
+
+    <item
+        android:id="@+id/action_save_read"
+        android:title="@string/action_save_read"
+        android:orderInCategory="1"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_save"
+        android:title="@string/action_save"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_save_bufer"
+        android:title="@string/Kopirovat_v_bufer"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+
+</menu>

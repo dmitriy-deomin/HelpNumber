@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dmitriy.deomin.helpnumber_free.Info"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Abaut_112"
+        android:id="@+id/button_122"
+        android:layout_weight="1"
+        android:onClick="clik" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Kak_vizvat_pozar"
+        android:id="@+id/button_pogar"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:onClick="clik" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Kak_vizvat_pol"
+        android:id="@+id/button_polis"
+        android:layout_weight="1"
+        android:onClick="clik" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Kak_vizvat_skoru"
+        android:id="@+id/button_skor"
+        android:layout_weight="1"
+        android:onClick="clik" />
+
+</LinearLayout>

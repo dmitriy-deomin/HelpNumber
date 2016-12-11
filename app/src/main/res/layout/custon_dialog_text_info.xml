@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Иформация про услугу"
+        android:id="@+id/textView5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView2"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView_info_dialog_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Узнать размер комисии и др(*145#)"
+            android:id="@+id/button_dialog_text_info_komisia"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Узнать максимальную сумму"
+            android:id="@+id/button_dialog_uznat_maksimalnuy"
+            android:layout_weight="1"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Закрыть"
+            android:id="@+id/button_close_dioalog_text"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
