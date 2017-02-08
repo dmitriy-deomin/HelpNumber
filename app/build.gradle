@@ -8,8 +8,8 @@ android {
         applicationId "dmitriy.deomin.helpnumber_free"
         minSdkVersion 9
         targetSdkVersion 16
-        versionCode 16
-        versionName "1.6"
+        versionCode 17
+        versionName "1.7"
     }
     buildTypes {
         release {
@@ -24,6 +24,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:10.0.1'
     compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
     compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.android.support.constraint:constraint-layout:+'
 }
 
 apply plugin: 'com.google.gms.google-services'

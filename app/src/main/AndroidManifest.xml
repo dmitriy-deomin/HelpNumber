@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:installLocation="auto"
-    package="dmitriy.deomin.helpnumber_free" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dmitriy.deomin.helpnumber_free"
+    android:installLocation="auto">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 
     <application
         android:allowBackup="true"
@@ -21,8 +17,8 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo">
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,55 +26,45 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Operatori"
-            android:label="@string/title_activity_operatori" >
-        </activity>
+            android:name=".Operatori"
+            android:label="@string/title_activity_operatori"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.List_number"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".List_number"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Pozvonit_na_gorodskoy"
+            android:name=".Pozvonit_na_gorodskoy"
             android:label="@string/title_activity_pozvonit_na_gorodskoy"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Save_numbers"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+            android:name=".Save_numbers"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
             >
         </activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Abaut"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Abaut"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Setting"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Setting"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Info"
-            android:label="@string/title_activity_info" >
-        </activity>
+            android:name=".Info"
+            android:label="@string/title_activity_info"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Text_inf"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Text_inf"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Edit_number"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Edit_number"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.List_operatori"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".List_operatori"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Zapros"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Zapros"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
         <activity
-            android:name="dmitriy.deomin.helpnumber_free.Dual_number"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
-        </activity>
+            android:name=".Dual_number"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"></activity>
+        <activity android:name=".Politika"></activity>
     </application>
 
 </manifest>

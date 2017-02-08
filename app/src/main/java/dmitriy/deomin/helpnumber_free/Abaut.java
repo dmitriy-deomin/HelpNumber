@@ -52,4 +52,11 @@ public class Abaut extends Activity {
     public void Ok(View view) {
         this.finish();
     }
+
+    public void politika(View view) {
+
+        Intent i = new Intent(this,Politika.class);
+        startActivity(i);
+
+    }
 }

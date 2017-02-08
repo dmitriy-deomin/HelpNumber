@@ -15,6 +15,13 @@
         android:text="@string/ver"
         android:gravity="center" />
 
+    <Button
+        android:id="@+id/button_politika"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="politika"
+        android:text="Политика Конфиденциальности" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
