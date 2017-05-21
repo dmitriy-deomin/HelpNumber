@@ -11,12 +11,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,9 +23,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import com.github.johnpersano.supertoasts.SuperToast;
 import com.github.johnpersano.supertoasts.util.Style;
@@ -40,11 +35,6 @@ public class MainActivity extends Activity {
     public static final String APP_PREFERENCES = "p_settings"; // файл сохранялки
     final String ALERT_DIALOG ="alert_dialog"; //
 
-
-    boolean visi;//true при активном приложении
-    boolean time_show_reklamma; //
-    static public int TIME_SHOW_REKLAMA; // сколько показывать рекламу
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,49 +46,6 @@ public class MainActivity extends Activity {
         }
 
         reneme_button();
-
-
-
-
-
-
-
-        visi = true;  // приложение активно
-        TIME_SHOW_REKLAMA = 10; //секнды показа рекламы
-
-        //реклама
-        final AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-        time_show_reklamma = false;  //если бы черти isVisible mAdView сделали это херня бы не пригодилась
-
-        //если нет интеренета скроем еЁ
-        if (!isOnline(getApplicationContext())) {
-            mAdView.setVisibility(View.GONE);
-        } else {
-            //через 10 секунд скроем её(пока так потом можно регулировать от количества постов)
-            final Handler handler = new Handler();
-            handler.post(new Runnable() {
-                @Override
-                public void run() {
-                    Log.v("TTT","ebasit");
-                    if (visi) {
-                        if (time_show_reklamma) {
-                            mAdView.setVisibility(View.GONE); // скроем рекламу и поток больше не запустится
-                        } else {
-                            //иначе покажем
-                            mAdView.setVisibility(View.VISIBLE);
-                            time_show_reklamma = true; // это нужно чтоб знать что реклама показна
-                            handler.postDelayed(this, 1000 * TIME_SHOW_REKLAMA); // через 10 секунд вырубим рекламу
-                        }
-                    }else {
-                        handler.postDelayed(this, 1000 * 2); // если приложение свернуто пока в пустую погоняем поток
-                    }
-                }
-            });
-        }
-
     }
 
     public void reneme_button(){
@@ -424,19 +371,5 @@ public class MainActivity extends Activity {
             return true;
         }
         return false;
-    }
-
-
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        visi = false;
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        visi = true;
     }
 }

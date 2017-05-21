@@ -34,7 +34,10 @@ public class Abaut extends Activity {
                 0xFFFFFFFF //int color
         );
         textView.setText(
-                "Номера помощи\n" + "Версия:  "+pinfo.versionName+"\n");
+                "Номера помощи\n" + "Версия:  "+pinfo.versionName+
+                        "\n\n\n"+
+                        "Поддержать проект \nQiwi 79027228625"
+        );
     }
 
     public void clik(View view) {
